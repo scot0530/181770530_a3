@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="icon" href="../../img/favicon-16x16.png" type="image/x-icon" sizes="16x16">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="http://wlu-cp202.appspot.com/CP202/Fall2019/shopping_cart_v1/cart.js" async></script>
+    <script>localStorage.checkoutURL = "../../checkout.html";</script>
+    <title>Holy Donuts</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>Holy Donuts</h1>
+    </header>
+
+    <div class="nav">
+      <ul>
+        <li>
+          <a class="navpage" href="../../index.html"><b>Homepage</b></a>
+        </li>
+        <li>
+          <a class="active navpage" href="../index.html"><b>Products</b></a>
+        </li>
+      </ul>
+    </div>
+
+    <hr>
+
+    <ul class="breadcrumb">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../index.html">Products</a></li>
+      <li>Chocolate Dip Donuts</li>
+    </ul>
+
+    <hr>
+
+    <div class="mainsection">
+      <div class="sixty-column">
+        <h2>Why Choose Chocolate?</h2>
+        <p>Many choose chocolate for the sweetness, the classic and timeless flavour,
+          or because that is what they have always gotten since they were young.
+          Those are all great reasons! But personally, your favourite baker chooses chocolate
+          when he is looking for comfort. What could be more comforting then the classic
+          taste that has moved so many men and women around the world?</p>
+      </div>
+
+      <div class="thirty-column">
+        <h2>Choose Chocolate!</h2>
+        <p>If you order right now, you get our standard pack of 6 entirely tax free!
+          These are savings you can't find anywhere else!</p>
+        <div class="wrapper">
+          <button class="button" onclick="clientAddItemToCart({prodName: 'Chocolate Donut', prodDesc: 'Verified as the best chocolate donut in the entire world', prodPrice: '1.00', prodQty: '6'})">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <footer>
+      <p><b>Open Monday to Friday, 9-5, Phone: 705.123.4567</b></p>
+    </footer>
+
+  </body>
+</html>

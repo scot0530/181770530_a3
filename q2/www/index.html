@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <script src="js/app.js" async></script>
+  <title>FakeChimp's Registration Form</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="monkey">
+  <div class="pic"><picture><source media="(min-width: 401px)" srcset="img/logo-color.png"><img src="img/logo-black-white.png"></picture></div>
+</div>
+<div class="info">
+  <h1>Get started with your account</h1>
+  <p>Find your people. Engage your customers. Build your brand. Do it all with
+      Mailchimp's Marketing Platform.</p>
+
+  <form onsubmit="return validateForm();" action="http://cp202-server.appspot.com/register" method="post">
+    <p>
+      <input type="hidden" name="student_id" id="student_id" value="181770530">
+      <b>Email</b> <br>
+      <input type="text" name="email" id="email">
+    </p>
+
+    <p>
+      <b>Username</b> <br>
+      <input type="text" name="username" id="username">
+    </p>
+
+    <p>
+      <b>Password</b> <a href="#" class="eye" onclick="togglepass()"><i class="fa fa-eye" aria-hidden="true"></i>Show</a> <br>
+      <input type="password" name="password" id="password">
+    </p>
+
+    <p>
+      <div class="bottom">
+      <input type="submit" value="Get Started!" class="button" onclick="http://cp202-server.appspot.com/register" method="post">
+      By clicking the "Get Started!" button, you are creating a FakeChimp account.
+      </div>
+    </p>
+  </form>
+  <footer>
+    <p>&copy; All Rights Reserved. FakeChimp &reg; is a registered trademark of
+      WLUCP202 Class.</p>
+  <footer>
+</div>
+</body>
+
+</html>
